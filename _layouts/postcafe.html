@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<script src="/Chart.js/Chart.js"></script>
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }} - {{ page.author }}</span>
+  <div class="post-header">
+    <canvas id="myChart" width="300" height="300"></canvas>
+    <img src="/media/{{ page.cover }}" class="header-image"/>
+  </div>
+  {{ content }}
+</div>
+
+<div class="related">
+  <h2>Posts relacionados</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+
+<script>
+  var data = {
+      labels: [
+        "Aroma",
+        "Corpo",
+        "Doçura",
+        "Finalização",
+        "Acidez",
+        "Força",
+        "Preço"
+      ],
+      datasets: [
+          {
+              label: "Café",
+              fillColor: "rgba(255,255,255,0.2)",
+              strokeColor: "#caad00",
+              pointColor: "#caad00",
+              pointStrokeColor: "#caad00",
+              pointHighlightFill: "#848482",
+              pointHighlightStroke: "#848482",
+              data: [
+                {{ page.aroma }},
+                {{ page.corpo }},
+                {{ page.docura }},
+                {{ page.finalizacao }},
+                {{ page.acidez }},
+                {{ page.forca }},
+                {{ page.preco }}
+              ]
+          },
+      ]
+  };
+  var ctx = document.getElementById("myChart").getContext("2d");
+  new Chart(ctx).Radar(data,{
+        scaleShowGridLines : true,
+        scaleGridLineColor : "#caad00",
+        scaleLineColor : "#caad00",
+        scaleFontColor : "#caad00",
+        tooltipFillColor: "#848482",
+        tooltipFontColor: "#caad00",
+        tooltipTitleFontColor: "#caad00",
+        scaleFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
+        tooltipFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
+        tooltipTitleFontFamily:"'PT Sans', Helvetica, Arial, sans-serif"
+  });
+</script>

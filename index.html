@@ -1,0 +1,150 @@
+---
+layout: default
+title: Home
+---
+<script src="/Chart.js/Chart.js"></script>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <img src="/media/{{ post.cover }}" class="header-image-index"/><br />
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url | remove_first: '/'}}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {% if (post.layout == "postcafe") %}
+    <canvas class="radarcanvas" id="myChart-cafe-{{ post.title }}" width="180" height="180"></canvas>
+    {% endif %}
+
+    {% if (post.layout == "postcomida") %}
+    <canvas class="radarcanvas" id="myChart-comida-{{ post.title }}" width="180" height="180"></canvas>
+    {% endif %}
+    <span>{{ post.content | strip_html | truncatewords: 150 }}</span>
+  </div>
+
+  {% if (post.layout == "postcafe") %}
+  <script>
+  var data = {
+      labels: [
+        "Aroma",
+        "Corpo",
+        "Doçura",
+        "Finalização",
+        "Acidez",
+        "Força",
+        "Preço"
+      ],
+      datasets: [
+          {
+              label: "Café",
+              fillColor: "rgba(255,255,255,0.2)",
+              strokeColor: "#caad00",
+              pointColor: "#caad00",
+              pointStrokeColor: "#caad00",
+              pointHighlightFill: "#848482",
+              pointHighlightStroke: "#848482",
+              data: [
+                {{ post.aroma }},
+                {{ post.corpo }},
+                {{ post.docura }},
+                {{ post.finalizacao }},
+                {{ post.acidez }},
+                {{ post.forca }},
+                {{ post.preco }}
+              ]
+          },
+      ]
+  };
+  var ctx = document.getElementById("myChart-cafe-{{ post.title }}").getContext("2d");
+  new Chart(ctx).Radar(data,{
+        scaleShowGridLines : true,
+        scaleGridLineColor : "#caad00",
+        scaleLineColor : "#caad00",
+        scaleFontColor : "#caad00",
+        tooltipFillColor: "#848482",
+        tooltipFontColor: "#caad00",
+        tooltipTitleFontColor: "#caad00",
+        scaleFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
+        tooltipFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
+        tooltipTitleFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
+        scaleGridLineWidth: 1
+  });
+</script>
+{% endif %}
+
+  {% if (post.layout == "postcomida") %}
+  <script>
+  var data = {
+      labels: [
+        "Local",
+        "Atendimento",
+        "Limpeza",
+        "Apresentação",
+        "Sabor",
+        "Cardápio",
+        "Preço",
+        "Sobremesa",
+      ],
+      datasets: [
+          {
+              label: "Comida",
+              fillColor: "rgba(255,255,255,0.2)",
+              strokeColor: "#caad00",
+              pointColor: "#caad00",
+              pointStrokeColor: "#caad00",
+              pointHighlightFill: "#848482",
+              pointHighlightStroke: "#848482",
+              data: [
+                {{ post.local }},
+                {{ post.atendimento }},
+                {{ post.limpeza }},
+                {{ post.apresentacao }},
+                {{ post.sabor }},
+                {{ post.cardapio }},
+                {{ post.preco }},
+                {{ post.sobremesa }}
+              ]
+          },
+      ]
+  };
+  var ctx = document.getElementById("myChart-comida-{{ post.title }}").getContext("2d");
+  new Chart(ctx).Radar(data,{
+        scaleShowGridLines : true,
+        scaleGridLineColor : "#caad00",
+        scaleLineColor : "#caad00",
+        scaleFontColor : "#caad00",
+        tooltipFillColor: "#848482",
+        tooltipFontColor: "#caad00",
+        tooltipTitleFontColor: "#caad00",
+        scaleFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
+        tooltipFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
+        tooltipTitleFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
+        scaleGridLineWidth: 1
+  });
+</script>
+{% endif %}
+
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Antigos</a>
+  {% else %}
+    <span class="pagination-item older">Antigos</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Novos</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Novos</span>
+  {% endif %}
+</div>
+

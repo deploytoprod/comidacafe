@@ -1,0 +1,149 @@
+<h3>Introduction</h3>
+
+<p>A radar chart is a way of showing multiple data points and the variation between them.</p>
+
+<p>They are often useful for comparing the points of two or more different data sets.</p>
+
+<div class="canvas-holder">
+    <canvas width="250" height="125"></canvas>
+</div>
+
+<h3>Example usage</h3>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">myRadarChart</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">).</span><span class="nx">Radar</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</code></pre></div>
+<h3>Data structure</h3>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">labels</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Eating&quot;</span><span class="p">,</span> <span class="s2">&quot;Drinking&quot;</span><span class="p">,</span> <span class="s2">&quot;Sleeping&quot;</span><span class="p">,</span> <span class="s2">&quot;Designing&quot;</span><span class="p">,</span> <span class="s2">&quot;Coding&quot;</span><span class="p">,</span> <span class="s2">&quot;Cycling&quot;</span><span class="p">,</span> <span class="s2">&quot;Running&quot;</span><span class="p">],</span>
+    <span class="nx">datasets</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nx">label</span><span class="o">:</span> <span class="s2">&quot;My First dataset&quot;</span><span class="p">,</span>
+            <span class="nx">fillColor</span><span class="o">:</span> <span class="s2">&quot;rgba(220,220,220,0.2)&quot;</span><span class="p">,</span>
+            <span class="nx">strokeColor</span><span class="o">:</span> <span class="s2">&quot;rgba(220,220,220,1)&quot;</span><span class="p">,</span>
+            <span class="nx">pointColor</span><span class="o">:</span> <span class="s2">&quot;rgba(220,220,220,1)&quot;</span><span class="p">,</span>
+            <span class="nx">pointStrokeColor</span><span class="o">:</span> <span class="s2">&quot;#fff&quot;</span><span class="p">,</span>
+            <span class="nx">pointHighlightFill</span><span class="o">:</span> <span class="s2">&quot;#fff&quot;</span><span class="p">,</span>
+            <span class="nx">pointHighlightStroke</span><span class="o">:</span> <span class="s2">&quot;rgba(220,220,220,1)&quot;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nx">label</span><span class="o">:</span> <span class="s2">&quot;My Second dataset&quot;</span><span class="p">,</span>
+            <span class="nx">fillColor</span><span class="o">:</span> <span class="s2">&quot;rgba(151,187,205,0.2)&quot;</span><span class="p">,</span>
+            <span class="nx">strokeColor</span><span class="o">:</span> <span class="s2">&quot;rgba(151,187,205,1)&quot;</span><span class="p">,</span>
+            <span class="nx">pointColor</span><span class="o">:</span> <span class="s2">&quot;rgba(151,187,205,1)&quot;</span><span class="p">,</span>
+            <span class="nx">pointStrokeColor</span><span class="o">:</span> <span class="s2">&quot;#fff&quot;</span><span class="p">,</span>
+            <span class="nx">pointHighlightFill</span><span class="o">:</span> <span class="s2">&quot;#fff&quot;</span><span class="p">,</span>
+            <span class="nx">pointHighlightStroke</span><span class="o">:</span> <span class="s2">&quot;rgba(151,187,205,1)&quot;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">96</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>For a radar chart, to provide context of what each point means, we include an array of strings that show around each point in the chart.
+For the radar chart data, we have an array of datasets. Each of these is an object, with a fill colour, a stroke colour, a colour for the fill of each point, and a colour for the stroke of each point. We also have an array of data values.</p>
+
+<p>The label key on each dataset is optional, and can be used when generating a scale for the chart.</p>
+
+<h3>Chart options</h3>
+
+<p>These are the customisation options specific to Radar charts. These options are merged with the <a href="#getting-started-global-chart-configuration">global chart configuration options</a>, and form the options of the chart.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+    <span class="c1">//Boolean - Whether to show lines for each scale point</span>
+    <span class="nx">scaleShowLine</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+    <span class="c1">//Boolean - Whether we show the angle lines out of the radar</span>
+    <span class="nx">angleShowLineOut</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+    <span class="c1">//Boolean - Whether to show labels on the scale</span>
+    <span class="nx">scaleShowLabels</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+
+    <span class="c1">// Boolean - Whether the scale should begin at zero</span>
+    <span class="nx">scaleBeginAtZero</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+    <span class="c1">//String - Colour of the angle line</span>
+    <span class="nx">angleLineColor</span> <span class="o">:</span> <span class="s2">&quot;rgba(0,0,0,.1)&quot;</span><span class="p">,</span>
+
+    <span class="c1">//Number - Pixel width of the angle line</span>
+    <span class="nx">angleLineWidth</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+
+    <span class="c1">//String - Point label font declaration</span>
+    <span class="nx">pointLabelFontFamily</span> <span class="o">:</span> <span class="s2">&quot;&#39;Arial&#39;&quot;</span><span class="p">,</span>
+
+    <span class="c1">//String - Point label font weight</span>
+    <span class="nx">pointLabelFontStyle</span> <span class="o">:</span> <span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+
+    <span class="c1">//Number - Point label font size in pixels</span>
+    <span class="nx">pointLabelFontSize</span> <span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+
+    <span class="c1">//String - Point label font colour</span>
+    <span class="nx">pointLabelFontColor</span> <span class="o">:</span> <span class="s2">&quot;#666&quot;</span><span class="p">,</span>
+
+    <span class="c1">//Boolean - Whether to show a dot for each point</span>
+    <span class="nx">pointDot</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+    <span class="c1">//Number - Radius of each point dot in pixels</span>
+    <span class="nx">pointDotRadius</span> <span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+
+    <span class="c1">//Number - Pixel width of point dot stroke</span>
+    <span class="nx">pointDotStrokeWidth</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+
+    <span class="c1">//Number - amount extra to add to the radius to cater for hit detection outside the drawn point</span>
+    <span class="nx">pointHitDetectionRadius</span> <span class="o">:</span> <span class="mi">20</span><span class="p">,</span>
+
+    <span class="c1">//Boolean - Whether to show a stroke for datasets</span>
+    <span class="nx">datasetStroke</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+    <span class="c1">//Number - Pixel width of dataset stroke</span>
+    <span class="nx">datasetStrokeWidth</span> <span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+
+    <span class="c1">//Boolean - Whether to fill the dataset with a colour</span>
+    <span class="nx">datasetFill</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+
+    <span class="c1">//String - A legend template</span>
+    <span class="nx">legendTemplate</span> <span class="o">:</span> <span class="s2">&quot;&lt;ul class=\&quot;&lt;%=name.toLowerCase()%&gt;-legend\&quot;&gt;&lt;% for (var i=0; i&lt;datasets.length; i++){%&gt;&lt;li&gt;&lt;span style=\&quot;background-color:&lt;%=datasets[i].strokeColor%&gt;\&quot;&gt;&lt;%if(datasets[i].label){%&gt;&lt;%=datasets[i].label%&gt;&lt;%}%&gt;&lt;/span&gt;&lt;/li&gt;&lt;%}%&gt;&lt;/ul&gt;&quot;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<p>You can override these for your <code>Chart</code> instance by passing a second argument into the <code>Radar</code> method as an object with the keys you want to override.</p>
+
+<p>For example, we could have a radar chart without a point for each on piece of data by doing the following:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="k">new</span> <span class="nx">Chart</span><span class="p">(</span><span class="nx">ctx</span><span class="p">).</span><span class="nx">Radar</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">pointDot</span><span class="o">:</span> <span class="kc">false</span>
+<span class="p">});</span>
+<span class="c1">// This will create a chart with all of the default options, merged from the global config,</span>
+<span class="c1">//  and the Bar chart defaults but this particular instance will have `pointDot` set to false.</span>
+</code></pre></div>
+<p>We can also change these defaults values for each Radar type that is created, this object is available at <code>Chart.defaults.Radar</code>.</p>
+
+<h3>Prototype methods</h3>
+
+<h4>.getPointsAtEvent( event )</h4>
+
+<p>Calling <code>getPointsAtEvent(event)</code> on your Chart instance passing an argument of an event, or jQuery event, will return the point elements that are at that the same position of that event.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">canvas</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">activePoints</span> <span class="o">=</span> <span class="nx">myRadarChart</span><span class="p">.</span><span class="nx">getPointsAtEvent</span><span class="p">(</span><span class="nx">evt</span><span class="p">);</span>
+    <span class="c1">// =&gt; activePoints is an array of points on the canvas that are at the same position as the click event.</span>
+<span class="p">};</span>
+</code></pre></div>
+<p>This functionality may be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.</p>
+
+<h4>.update( )</h4>
+
+<p>Calling <code>update()</code> on your Chart instance will re-render the chart with any updated values, allowing you to edit the value of multiple existing points, then render those in one animated render loop.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">myRadarChart</span><span class="p">.</span><span class="nx">datasets</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">points</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="nx">value</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="c1">// Would update the first dataset&#39;s value of &#39;Sleeping&#39; to be 50</span>
+<span class="nx">myRadarChart</span><span class="p">.</span><span class="nx">update</span><span class="p">();</span>
+<span class="c1">// Calling update now animates the position of Sleeping from 90 to 50.</span>
+</code></pre></div>
+<h4>.addData( valuesArray, label )</h4>
+
+<p>Calling <code>addData(valuesArray, label)</code> on your Chart instance passing an array of values for each dataset, along with a label for those points.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// The values array passed into addData should be one for each dataset in the chart</span>
+<span class="nx">myRadarChart</span><span class="p">.</span><span class="nx">addData</span><span class="p">([</span><span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">],</span> <span class="s2">&quot;Dancing&quot;</span><span class="p">);</span>
+<span class="c1">// The new data will now animate at the end of the chart.</span>
+</code></pre></div>
+<h4>.removeData( )</h4>
+
+<p>Calling <code>removeData()</code> on your Chart instance will remove the first value for all datasets on the chart.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">myRadarChart</span><span class="p">.</span><span class="nx">removeData</span><span class="p">();</span>
+<span class="c1">// Other points will now animate to their correct positions.</span>
+</code></pre></div>

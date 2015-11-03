@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Comida + Café
+tagline:          Black Theme for Jekyll
+description:      "Um blog de dois apreciadores do que há de melhor no mundo: comida e café."
+url:              https://comidacafe.com.br
+baseurl:          /
+
+author1:
+  name:           'Rafael Lopes'
+  url:            https://twitter.com/cloudlopes
+author2:
+  name:           'Santiago Samezima'
+  url:            https://twitter.com/samezima
+
+paginate:         5
+
+# Custom vars
+version:          1.0.0
