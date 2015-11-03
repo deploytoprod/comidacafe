@@ -8,8 +8,8 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }} - {{ page.author }}</span>
   <div class="post-header">
-    <canvas id="myChart" width="300" height="300"></canvas>
-    <img src="/media/{{ page.cover }}" class="header-image"/>
+    <canvas id="myChart" width="300" height="265"></canvas>
+    <img src="/media/{{ page.cover }}" class="header-image-comida"/>
   </div>
   {{ content }}
 </div>
@@ -35,11 +35,11 @@ layout: default
 <script>
   var data = {
       labels: [
-        "Local",
         "Atendimento",
+        "Local",
         "Limpeza",
+        "Tempero",
         "Apresentação",
-        "Sabor",
         "Cardápio",
         "Preço",
         "Sobremesa",
@@ -54,11 +54,11 @@ layout: default
               pointHighlightFill: "#848482",
               pointHighlightStroke: "#848482",
               data: [
-                {{ page.local }},
                 {{ page.atendimento }},
+                {{ page.local }},
                 {{ page.limpeza }},
+                {{ page.tempero }},
                 {{ page.apresentacao }},
-                {{ page.sabor }},
                 {{ page.cardapio }},
                 {{ page.preco }},
                 {{ page.sobremesa }}

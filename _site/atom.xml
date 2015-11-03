@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Comida + Café</title>
- <link href="https://comidacafe.com.br/atom.xml" rel="self"/>
- <link href="https://comidacafe.com.br/"/>
- <updated>2015-11-03T19:23:37-02:00</updated>
- <id>https://comidacafe.com.br</id>
+ <link href="http://comidacafe.com.br/atom.xml" rel="self"/>
+ <link href="http://comidacafe.com.br/"/>
+ <updated>2015-11-03T20:13:39-02:00</updated>
+ <id>http://comidacafe.com.br</id>
  <author>
    <name></name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Bullguer</title>
-   <link href="https://comidacafe.com.br/2015/11/02/bullguer/"/>
+   <link href="http://comidacafe.com.br/2015/11/02/bullguer/"/>
    <updated>2015-11-02T00:00:00-02:00</updated>
-   <id>https://comidacafe.com.br/2015/11/02/bullguer</id>
+   <id>http://comidacafe.com.br/2015/11/02/bullguer</id>
    <content type="html">&lt;p&gt;Com uma excelente decoração baseada em arte contemporânea e coisas maneiras na parede, encontra-se na esquina da Diogo Jácome, em Moema, o &lt;a href=&quot;http://bullguer.com/&quot;&gt;Bullguer&lt;/a&gt;: também conhecido como meu novo lugar de hambúrguer favorito em SP. Sempre costumo dizer que restaurante de hamburguer que não faz a própria carne, não é restaurante de hamburguer que de preze. E aqui não é diferente, carne é feita no próprio restaurante e possui um tempero bem característico. O lugar é um pouco pequeno mas ideal para atender a demanda com qualidade,  a qual quase sempre gera uma fila na porta, que flui rápido. Você pode pedir o dobro de carne em qualquer pedida e as batatas fritas são temperadas com páprica. Com cardápio simples porém poderoso, o Bullguer se apresenta como uma incrível opção para ir com os amigos jogar conversa fora e comer um hambúrguer a um preço bastante acessível.&lt;/p&gt;
 
 &lt;p&gt;A escolha musical do lugar também nunca decepcionou, das 4 vezes que eu fui, sempre contei com playlists de rock, soul e blaxploitation nas caixas da Bose.&lt;/p&gt;
@@ -39,9 +39,9 @@
  
  <entry>
    <title>Finca La Marianela - Colômbia</title>
-   <link href="https://comidacafe.com.br/2015/11/01/finca-la-marianela-colombia/"/>
+   <link href="http://comidacafe.com.br/2015/11/01/finca-la-marianela-colombia/"/>
    <updated>2015-11-01T00:00:00-02:00</updated>
-   <id>https://comidacafe.com.br/2015/11/01/finca-la-marianela-colombia</id>
+   <id>http://comidacafe.com.br/2015/11/01/finca-la-marianela-colombia</id>
    <content type="html">&lt;p&gt;A embalagem diz que a altura do local de colheita é de 1700/1800m, com variedad 80% caturra (seja lá o que isso for) y 20% Colombia, alto endulzar, acidez media/alta, cuerpo medio con notas a frutos amarillos y azucar morena. Vem em um saquinho de 250g. Paguei 100 pesos argentinos (23 reais) nesse saquinho.&lt;/p&gt;
 
 &lt;p&gt;Semana passada estive na Argentina a trabalho e como sempre acabei passando em um Coffee Shop. Uma das coisas que eu mais gosto de fazer é procurar cafés e bons coffee shops nas minhas viagens. Acabei encontrando o &lt;a href=&quot;http://www.labcafe.com.ar/&quot;&gt;LAB Tostadores de Cafe&lt;/a&gt;, em Palermo - Buenos Aires, não resisti e trouxe um de cada: um da Colômbia, outro da Etiópia e outro Nova Guiné.&lt;/p&gt;

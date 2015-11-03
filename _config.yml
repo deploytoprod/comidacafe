@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            Comida + Café
 tagline:          Black Theme for Jekyll
 description:      "Um blog de dois apreciadores do que há de melhor no mundo: comida e café."
-url:              https://comidacafe.com.br
+url:              http://comidacafe.com.br
 baseurl:          /
 
 author1:
@@ -24,3 +24,5 @@ paginate:         5
 
 # Custom vars
 version:          1.0.0
+github:
+  repo:           https://github.com/bobeirasa/comidacafe

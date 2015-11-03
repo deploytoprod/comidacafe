@@ -14,14 +14,14 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date_to_string }} - {{ post.author }}</span>
 
     {% if (post.layout == "postcafe") %}
-    <canvas class="radarcanvas" id="myChart-cafe-{{ post.title }}" width="180" height="180"></canvas>
+    <canvas class="radarcanvas" id="myChart-cafe-{{ post.title }}" width="180" height="150"></canvas>
     {% endif %}
 
     {% if (post.layout == "postcomida") %}
-    <canvas class="radarcanvas" id="myChart-comida-{{ post.title }}" width="180" height="180"></canvas>
+    <canvas class="radarcanvas" id="myChart-comida-{{ post.title }}" width="180" height="150"></canvas>
     {% endif %}
     <span>{{ post.content | strip_html | truncatewords: 150 }}</span>
   </div>
@@ -80,11 +80,11 @@ title: Home
   <script>
   var data = {
       labels: [
-        "Local",
         "Atendimento",
+        "Local",
         "Limpeza",
+        "Tempero",
         "Apresentação",
-        "Sabor",
         "Cardápio",
         "Preço",
         "Sobremesa",
@@ -99,11 +99,11 @@ title: Home
               pointHighlightFill: "#848482",
               pointHighlightStroke: "#848482",
               data: [
-                {{ post.local }},
                 {{ post.atendimento }},
+                {{ post.local }},
                 {{ post.limpeza }},
+                {{ post.tempero }},
                 {{ post.apresentacao }},
-                {{ post.sabor }},
                 {{ post.cardapio }},
                 {{ post.preco }},
                 {{ post.sobremesa }}
