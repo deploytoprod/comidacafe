@@ -35,14 +35,14 @@ layout: default
 <script>
   var data = {
       labels: [
-        "Atendimento",
-        "Local",
-        "Limpeza",
-        "Tempero",
-        "Apresentação",
-        "Cardápio",
-        "Preço",
-        "Sobremesa",
+        {% if (page.atendimento != blank) %}"Atendimento",{% endif %}
+        {% if (page.local != blank) %}"Local",{% endif %}
+        {% if (page.limpeza != blank) %}"Limpeza",{% endif %}
+        {% if (page.tempero != blank) %}"Tempero",{% endif %}
+        {% if (page.apresentacao != blank) %}"Apresentação",{% endif %}
+        {% if (page.cardapio != blank) %}"Cardápio",{% endif %}
+        {% if (page.preco != blank) %}"Preço",{% endif %}
+        {% if (page.sobremesa != blank) %}"Sobremesa"{% endif %}
       ],
       datasets: [
           {
@@ -54,14 +54,14 @@ layout: default
               pointHighlightFill: "#848482",
               pointHighlightStroke: "#848482",
               data: [
-                {{ page.atendimento }},
-                {{ page.local }},
-                {{ page.limpeza }},
-                {{ page.tempero }},
-                {{ page.apresentacao }},
-                {{ page.cardapio }},
-                {{ page.preco }},
-                {{ page.sobremesa }}
+                {% if (page.atendimento != blank) %}{{ page.atendimento }},{% endif %}
+                {% if (page.local != blank) %}{{ page.local }},{% endif %}
+                {% if (page.limpeza != blank) %}{{ page.limpeza }},{% endif %}
+                {% if (page.tempero != blank) %}{{ page.tempero }},{% endif %}
+                {% if (page.apresentacao != blank) %}{{ page.apresentacao }},{% endif %}
+                {% if (page.cardapio != blank) %}{{ page.cardapio }},{% endif %}
+                {% if (page.preco != blank) %}{{ page.preco }},{% endif %}
+                {% if (page.sobremesa != blank) %}{{ page.sobremesa }}{% endif %}
               ]
           },
       ]

@@ -30,13 +30,13 @@ title: Home
   <script>
   var data = {
       labels: [
-        "Aroma",
-        "Corpo",
-        "Doçura",
-        "Finalização",
-        "Acidez",
-        "Força",
-        "Preço"
+        {% if (post.aroma != blank) %}"Aroma",{% endif %}
+        {% if (post.corpo != blank) %}"Corpo",{% endif %}
+        {% if (post.docura != blank) %}"Doçura",{% endif %}
+        {% if (post.finalizacao != blank) %}"Finalização",{% endif %}
+        {% if (post.acidez != blank) %}"Acidez",{% endif %}
+        {% if (post.forca != blank) %}"Força",{% endif %}
+        {% if (post.preco != blank) %}"Preço"{% endif %}
       ],
       datasets: [
           {
@@ -48,13 +48,13 @@ title: Home
               pointHighlightFill: "#848482",
               pointHighlightStroke: "#848482",
               data: [
-                {{ post.aroma }},
-                {{ post.corpo }},
-                {{ post.docura }},
-                {{ post.finalizacao }},
-                {{ post.acidez }},
-                {{ post.forca }},
-                {{ post.preco }}
+                {% if (post.aroma != blank) %}{{ post.aroma }},{% endif %}
+                {% if (post.corpo != blank) %}{{ post.corpo }},{% endif %}
+                {% if (post.docura != blank) %}{{ post.docura }},{% endif %}
+                {% if (post.finalizacao != blank) %}{{ post.finalizacao }},{% endif %}
+                {% if (post.acidez != blank) %}{{ post.acidez }},{% endif %}
+                {% if (post.forca != blank) %}{{ post.forca }},{% endif %}
+                {% if (post.preco != blank) %}{{ post.preco }}{% endif %}
               ]
           },
       ]
@@ -80,14 +80,14 @@ title: Home
   <script>
   var data = {
       labels: [
-        "Atendimento",
-        "Local",
-        "Limpeza",
-        "Tempero",
-        "Apresentação",
-        "Cardápio",
-        "Preço",
-        "Sobremesa",
+        {% if (post.atendimento != blank) %}"Atendimento",{% endif %}
+        {% if (post.local != blank) %}"Local",{% endif %}
+        {% if (post.limpeza != blank) %}"Limpeza",{% endif %}
+        {% if (post.tempero != blank) %}"Tempero",{% endif %}
+        {% if (post.apresentacao != blank) %}"Apresentação",{% endif %}
+        {% if (post.cardapio != blank) %}"Cardápio",{% endif %}
+        {% if (post.preco != blank) %}"Preço",{% endif %}
+        {% if (post.sobremesa != blank) %}"Sobremesa"{% endif %}
       ],
       datasets: [
           {
@@ -99,14 +99,14 @@ title: Home
               pointHighlightFill: "#848482",
               pointHighlightStroke: "#848482",
               data: [
-                {{ post.atendimento }},
-                {{ post.local }},
-                {{ post.limpeza }},
-                {{ post.tempero }},
-                {{ post.apresentacao }},
-                {{ post.cardapio }},
-                {{ post.preco }},
-                {{ post.sobremesa }}
+                {% if (post.atendimento != blank) %}{{ post.atendimento }},{% endif %}
+                {% if (post.local != blank) %}{{ post.local }},{% endif %}
+                {% if (post.limpeza != blank) %}{{ post.limpeza }},{% endif %}
+                {% if (post.tempero != blank) %}{{ post.tempero }},{% endif %}
+                {% if (post.apresentacao != blank) %}{{ post.apresentacao }},{% endif %}
+                {% if (post.cardapio != blank) %}{{ post.cardapio }},{% endif %}
+                {% if (post.preco != blank) %}{{ post.preco }},{% endif %}
+                {% if (post.sobremesa != blank) %}{{ post.sobremesa }}{% endif %}
               ]
           },
       ]
