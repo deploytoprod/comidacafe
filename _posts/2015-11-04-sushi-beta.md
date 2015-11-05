@@ -4,11 +4,11 @@ author: Rafael Lopes
 title: Sushi Beta
 local:
 atendimento:
-limpeza: 71
+limpeza: 90
 apresentacao: 91
 tempero: 93
 cardapio: 76
-preco: 70
+preco: 62
 sobremesa:
 cover: sushi-beta.jpg
 ---
