@@ -1,5 +1,5 @@
 ---
-layout: postcomida
+layout: postradar
 author: Rafael Lopes
 title: Il Barista
 local: 55
@@ -25,5 +25,3 @@ A água com gás que acompanha veio morna e sem gás e não veio o biscoito, com
 
 ![Image](/media/il-barista-1.jpg)
 ![Image](/media/il-barista-2.jpg)
-
-[Il Barista]: 
