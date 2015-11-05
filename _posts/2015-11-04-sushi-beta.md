@@ -13,7 +13,7 @@ sobremesa:
 cover: sushi-beta.jpg
 ---
 
-O Sushi Beta, que também atende por "Inovação em delivery de sushi" somente faz entregas, existe um [App pra iPhone](https://itunes.apple.com/us/app/sushi-beta/id979065642?mt=8) sensacional, usa [AWS](http://aws.amazon.com/) como hosting das soluções, e é bom pra caralho.
+O [Sushi Beta], que também atende por "Inovação em delivery de sushi" somente faz entregas, existe um [App pra iPhone](https://itunes.apple.com/us/app/sushi-beta/id979065642?mt=8) sensacional, usa [AWS](http://aws.amazon.com/) como hosting das soluções, e é bom pra caralho.
 
 O Chef no comando é o Hideto Shimizu, ele foi treinado por 2 grandes mestres: seu pai, Mitsuaki Shimizu, à frente do [Sushiguen] por quase 40 anos em São Paulo; e Nobuyuki "Nobu" Matsuhisa, o mundialmente famoso Sushi Master do Restaurante Nobu, presente em 30 cidades ao redor do mundo. Com mais de 17 anos de experiência nos estilos tradicionais e modernos de Sushi e tendo trabalhado em Tóquio, Mykonos, Munique e St. Moritz, Hideto retornou ao Brasil para trazer pra gente o melhor do sushi.
 
