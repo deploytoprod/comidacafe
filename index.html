@@ -15,72 +15,11 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }} - {{ post.author }}</span>
+    <canvas class="radarcanvas" id="myChart-{{ post.title }}" width="180" height="150"></canvas>
 
-    {% if (post.layout == "postcafe") %}
-    <canvas class="radarcanvas" id="myChart-cafe-{{ post.title }}" width="180" height="150"></canvas>
-    {% endif %}
-
-    {% if (post.layout == "postcomida") %}
-    <canvas class="radarcanvas" id="myChart-comida-{{ post.title }}" width="180" height="150"></canvas>
-    {% endif %}
     <span>{{ post.content | strip_html | truncatewords: 150 }}</span>
   </div>
 
-  {% if (post.layout == "postcafe") %}
-  <script>
-  var data = {
-      labels: [
-        {% if (post.aroma != blank) %}"Aroma",{% endif %}
-        {% if (post.corpo != blank) %}"Corpo",{% endif %}
-        {% if (post.docura != blank) %}"Doçura",{% endif %}
-        {% if (post.finalizacao != blank) %}"Finalização",{% endif %}
-        {% if (post.acidez != blank) %}"Acidez",{% endif %}
-        {% if (post.forca != blank) %}"Força",{% endif %}
-        {% if (post.preco != blank) %}"Preço"{% endif %}
-      ],
-      datasets: [
-          {
-              label: "Café",
-              fillColor: "rgba(255,255,255,0.2)",
-              strokeColor: "#caad00",
-              pointColor: "#caad00",
-              pointStrokeColor: "#caad00",
-              pointHighlightFill: "#848482",
-              pointHighlightStroke: "#848482",
-              data: [
-                {% if (post.aroma != blank) %}{{ post.aroma }},{% endif %}
-                {% if (post.corpo != blank) %}{{ post.corpo }},{% endif %}
-                {% if (post.docura != blank) %}{{ post.docura }},{% endif %}
-                {% if (post.finalizacao != blank) %}{{ post.finalizacao }},{% endif %}
-                {% if (post.acidez != blank) %}{{ post.acidez }},{% endif %}
-                {% if (post.forca != blank) %}{{ post.forca }},{% endif %}
-                {% if (post.preco != blank) %}{{ post.preco }}{% endif %}
-              ]
-          },
-      ]
-  };
-  var ctx = document.getElementById("myChart-cafe-{{ post.title }}").getContext("2d");
-  new Chart(ctx).Radar(data,{
-        scaleShowGridLines : true,
-        scaleGridLineColor : "#caad00",
-        scaleLineColor : "#caad00",
-        scaleFontColor : "#caad00",
-        tooltipFillColor: "#848482",
-        tooltipFontColor: "#caad00",
-        tooltipTitleFontColor: "#caad00",
-        scaleFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
-        tooltipFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
-        tooltipTitleFontFamily:"'PT Sans', Helvetica, Arial, sans-serif",
-        scaleGridLineWidth: 1,
-        scaleOverride: true,
-        scaleSteps: 4,
-        scaleStepWidth: 25,
-        scaleStartValue: 0,
-  });
-</script>
-{% endif %}
-
-  {% if (post.layout == "postcomida") %}
   <script>
   var data = {
       labels: [
@@ -91,11 +30,18 @@ title: Home
         {% if (post.apresentacao != blank) %}"Apresentação",{% endif %}
         {% if (post.cardapio != blank) %}"Cardápio",{% endif %}
         {% if (post.preco != blank) %}"Preço",{% endif %}
-        {% if (post.sobremesa != blank) %}"Sobremesa"{% endif %}
+        {% if (post.sobremesa != blank) %}"Sobremesa",{% endif %}
+
+        {% if (post.aroma != blank) %}"Aroma",{% endif %}
+        {% if (post.corpo != blank) %}"Corpo",{% endif %}
+        {% if (post.docura != blank) %}"Doçura",{% endif %}
+        {% if (post.finalizacao != blank) %}"Finalização",{% endif %}
+        {% if (post.acidez != blank) %}"Acidez",{% endif %}
+        {% if (post.forca != blank) %}"Força",{% endif %}
       ],
       datasets: [
           {
-              label: "Comida",
+              label: "Café",
               fillColor: "rgba(255,255,255,0.2)",
               strokeColor: "#caad00",
               pointColor: "#caad00",
@@ -110,12 +56,19 @@ title: Home
                 {% if (post.apresentacao != blank) %}{{ post.apresentacao }},{% endif %}
                 {% if (post.cardapio != blank) %}{{ post.cardapio }},{% endif %}
                 {% if (post.preco != blank) %}{{ post.preco }},{% endif %}
-                {% if (post.sobremesa != blank) %}{{ post.sobremesa }}{% endif %}
+                {% if (post.sobremesa != blank) %}{{ post.sobremesa }},{% endif %}
+
+                {% if (post.aroma != blank) %}{{ post.aroma }},{% endif %}
+                {% if (post.corpo != blank) %}{{ post.corpo }},{% endif %}
+                {% if (post.docura != blank) %}{{ post.docura }},{% endif %}
+                {% if (post.finalizacao != blank) %}{{ post.finalizacao }},{% endif %}
+                {% if (post.acidez != blank) %}{{ post.acidez }},{% endif %}
+                {% if (post.forca != blank) %}{{ post.forca }},{% endif %}
               ]
           },
       ]
   };
-  var ctx = document.getElementById("myChart-comida-{{ post.title }}").getContext("2d");
+  var ctx = document.getElementById("myChart-{{ post.title }}").getContext("2d");
   new Chart(ctx).Radar(data,{
         scaleShowGridLines : true,
         scaleGridLineColor : "#caad00",
@@ -134,7 +87,9 @@ title: Home
         scaleStartValue: 0,
   });
 </script>
-{% endif %}
+
+
+
 
   {% endfor %}
 </div>
