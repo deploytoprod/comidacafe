@@ -8,8 +8,8 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }} - {{ page.author }}</span>
   <div class="post-header">
-    <canvas id="myChart" width="300" height="250"></canvas>
-    <img src="/media/{{ page.cover }}" class="header-image-cafe"/>
+    <canvas id="myChart" width="300" height="265"></canvas>
+    <img src="/media/{{ page.cover }}" class="header-image-comida"/>
   </div>
   {{ content }}
 </div>
@@ -35,13 +35,21 @@ layout: default
 <script>
   var data = {
       labels: [
+        {% if (page.atendimento != blank) %}"Atendimento",{% endif %}
+        {% if (page.local != blank) %}"Local",{% endif %}
+        {% if (page.limpeza != blank) %}"Limpeza",{% endif %}
+        {% if (page.tempero != blank) %}"Tempero",{% endif %}
+        {% if (page.apresentacao != blank) %}"Apresentação",{% endif %}
+        {% if (page.cardapio != blank) %}"Cardápio",{% endif %}
+        {% if (page.preco != blank) %}"Preço",{% endif %}
+        {% if (page.sobremesa != blank) %}"Sobremesa",{% endif %}
+
         {% if (page.aroma != blank) %}"Aroma",{% endif %}
         {% if (page.corpo != blank) %}"Corpo",{% endif %}
         {% if (page.docura != blank) %}"Doçura",{% endif %}
         {% if (page.finalizacao != blank) %}"Finalização",{% endif %}
         {% if (page.acidez != blank) %}"Acidez",{% endif %}
         {% if (page.forca != blank) %}"Força",{% endif %}
-        {% if (page.preco != blank) %}"Preço"{% endif %}
       ],
       datasets: [
           {
@@ -53,13 +61,21 @@ layout: default
               pointHighlightFill: "#848482",
               pointHighlightStroke: "#848482",
               data: [
+                {% if (page.atendimento != blank) %}{{ page.atendimento }},{% endif %}
+                {% if (page.local != blank) %}{{ page.local }},{% endif %}
+                {% if (page.limpeza != blank) %}{{ page.limpeza }},{% endif %}
+                {% if (page.tempero != blank) %}{{ page.tempero }},{% endif %}
+                {% if (page.apresentacao != blank) %}{{ page.apresentacao }},{% endif %}
+                {% if (page.cardapio != blank) %}{{ page.cardapio }},{% endif %}
+                {% if (page.preco != blank) %}{{ page.preco }},{% endif %}
+                {% if (page.sobremesa != blank) %}{{ page.sobremesa }},{% endif %}
+
                 {% if (page.aroma != blank) %}{{ page.aroma }},{% endif %}
                 {% if (page.corpo != blank) %}{{ page.corpo }},{% endif %}
                 {% if (page.docura != blank) %}{{ page.docura }},{% endif %}
                 {% if (page.finalizacao != blank) %}{{ page.finalizacao }},{% endif %}
                 {% if (page.acidez != blank) %}{{ page.acidez }},{% endif %}
                 {% if (page.forca != blank) %}{{ page.forca }},{% endif %}
-                {% if (page.preco != blank) %}{{ page.preco }}{% endif %}
               ]
           },
       ]
@@ -80,5 +96,6 @@ layout: default
         scaleSteps: 4,
         scaleStepWidth: 25,
         scaleStartValue: 0,
+
   });
 </script>
