@@ -9,7 +9,7 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }} - {{ page.author }}</span>
   <div class="post-header">
     <canvas id="myChart" width="300" height="265"></canvas>
-    <img src="/media/{{ page.cover }}" class="header-image-comida"/>
+    <img src="{{ site.baseurl }}media/265/{{ page.cover }}" onError="this.src = '{{ site.baseurl }}media/{{ page.cover }}'" class="header-image" /><br />
   </div>
   {{ content }}
 </div>

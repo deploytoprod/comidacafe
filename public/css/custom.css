@@ -3,18 +3,9 @@
   margin-bottom: 5px;
   margin-top: 5px;
 }
-.header-image-comida {
+.header-image {
   width: 265px;
   height: 265px;
-  display: inline;
-  border: 0;
-  margin: 0;
-  margin-left: 30px;
-  text-align: middle;
-}
-.header-image-cafe {
-  width: 265px;
-  height: 250px;
   display: inline;
   border: 0;
   margin: 0;

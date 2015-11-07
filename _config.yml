@@ -1,6 +1,7 @@
 # Dependencies
 markdown:         redcarpet
 gems: [jekyll-paginate]
+gems: [jekyll-minimagick]
 
 # Permalinks
 permalink:        pretty
@@ -25,3 +26,17 @@ paginate:         5
 version:          1.0.0
 github:
   repo:           https://github.com/bobeirasa/comidacafe
+
+mini_magick:
+    thumbnail:
+        source: media/
+        destination: media/150/
+        resize: "150x150"
+    header:
+        source: media/
+        destination: media/265/
+        resize: "265x265"
+    default:
+        source: media/
+        destination: media/712/
+        resize: "712x712"
