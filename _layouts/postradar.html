@@ -9,7 +9,7 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }} - {{ page.author }}</span>
   <div class="post-header">
     <canvas id="myChart" width="300" height="265"></canvas>
-    <img src="{{ site.baseurl }}media/265/{{ page.cover }}" onError="this.src = '{{ site.baseurl }}media/{{ page.cover }}'" class="header-image" /><br />
+    <img src="{{ site.baseurl }}media/265/{{ page.cover }}" onError="onerror = null; this.src = '{{ site.baseurl }}media/{{ page.cover }}';" class="header-image" /><br />
   </div>
   {{ content }}
 </div>
@@ -47,7 +47,7 @@ layout: default
         {% if (page.aroma != blank) %}"Aroma",{% endif %}
         {% if (page.corpo != blank) %}"Corpo",{% endif %}
         {% if (page.docura != blank) %}"Doçura",{% endif %}
-        {% if (page.finalizacao != blank) %}"Finalização",{% endif %}
+        {% if (page.finalizacao != blank) %}"Final",{% endif %}
         {% if (page.acidez != blank) %}"Acidez",{% endif %}
         {% if (page.forca != blank) %}"Força",{% endif %}
       ],
