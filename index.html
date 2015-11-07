@@ -9,7 +9,7 @@ title: Home
   <div class="post">
     <img src="{{ site.baseurl }}media/150/{{ post.cover }}" onError="this.src = '{{ site.baseurl }}media/{{ post.cover }}'; this.onError = null;" class="header-image-index" /><br />
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url | remove_first: '/'}}">
+      <a href="{{ site.baseurl }}{{ post.url | remove_first: '/'}}index.html">
         {{ post.title }}
       </a>
     </h1>
@@ -96,15 +96,15 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Antigos</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}/index.html">Antigos</a>
   {% else %}
     <span class="pagination-item older">Antigos</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Novos</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}index.html">Novos</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}/index.html">Newer</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Novos</span>

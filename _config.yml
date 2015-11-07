@@ -8,9 +8,9 @@ permalink:        pretty
 
 # Setup
 title:            Comida + Café
-tagline:          Black Theme for Jekyll
+tagline:          o que há de melhor no mundo
 description:      "Um blog de dois apreciadores do que há de melhor no mundo: comida e café."
-url:              http://comidacafe.com.br
+url:              http://comidacafe.com.br/index.html
 baseurl:          /
 
 author1:
