@@ -12,7 +12,9 @@ preco: 88
 cover: juan-valdez-finca.jpg
 ---
 
-Conforme já dito, na minha opinião os cafés colombianos são os melhores do mundo, e o [Finca], colombiano, que faz parte de uma seleção gourmet da [Juan Valdez], se apresenta como uma das melhores opções para o "café de prateleira" disponíveis no mercado - categorizo como "café de prateleira" esses encontrados no varejo, seja em lojas online ou lojas de shopping, que possuem uma vasta e grande produção para atender uma demanda a nível de país ou mundo. Vendido tanto em sua [loja virtual][Juan Valdez] quanto em lojas físicas na Colômbia, o Juan Valdez [Finca] Gourmet Selection é um dos cafés mais docinhos e agradáveis que eu já tomei. Vem em uma embalagem de 500g, muito bonita por sinal (que eu não uso porque sempre guardo meus cafés nos meus potes a vácuo) e custa 15 dólares.
+Conforme já dito, na minha opinião os cafés colombianos são os melhores do mundo, e o [Finca], colombiano, que faz parte de uma seleção gourmet da [Juan Valdez], se apresenta como uma das melhores opções para o "café de prateleira" disponíveis no mercado - categorizo como "café de prateleira" esses encontrados no varejo, seja em lojas online ou lojas de shopping, que possuem uma vasta e grande produção para atender uma demanda a nível de país ou mundo. Vendido tanto em sua [loja virtual][Juan Valdez] quanto em lojas físicas na Colômbia, o Juan Valdez [Finca] Gourmet Selection é um dos cafés mais docinhos e agradáveis que eu já tomei. Vem em uma embalagem de 500g, muito bonita por sinal (que eu não uso porque sempre guardo meus cafés nos meus potes a vácuo) e custa 15 dólares que diz assim:
+
+> Este café fue cosechado y cultivado por familias cafeteras colombianas, capacitados para que en sus fincas apliquen los principios sociales, económicos y ambientales durante todo em proceso de producción. El sello UTZ certified(TM) asegura que el café fue producido con respeto al medio ambiente y a la gente que lo produjó. 100% café premium colombiano.
 
 ![Image](/media/juan-valdez-finca-3.jpg)
 
