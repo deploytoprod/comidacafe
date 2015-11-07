@@ -31,3 +31,6 @@ nbproject
 
 # Folders to ignore
 node_modules
+
+# Amazon stuff
+s3_website.yml
