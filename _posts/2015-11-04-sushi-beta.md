@@ -21,13 +21,15 @@ Uma coisa que eu gostei bastante também foi o fato deles somente fazerem atendi
 
 Dá um confere em como a coisa vem, presta atenção nos detalhes e no acabamento. Vou pedir pelo menos 1x por semana pra comer no trabalho. Combinado Especial para 2 pessoas, composto de 36 peças de Sushis e Sashimis de Peixes e Frutos do Mar variados, incluindo enrolados Uramaki Especial custa R$ 122 e satisfaz bem duas pessoas com fome. Vale a pena.
 
-![Image](/media/sushi-beta-1.jpg)
-![Image](/media/sushi-beta-2.jpg)
-![Image](/media/sushi-beta-3.jpg)
+![Image](/media/712/sushi-beta-1.jpg)
+![Image](/media/712/sushi-beta-2.jpg)
+![Image](/media/712/sushi-beta-3.jpg)
+
 O Shoyu também é o melhor shoyu possível que pode ser entregue via delivery. Esse que ele usa é mais foda que o [Kikkoman]
-![Image](/media/sushi-beta-4.jpg)
-![Image](/media/sushi-beta-5.jpg)
-![Image](/media/sushi-beta-6.jpg)
+
+![Image](/media/712/sushi-beta-4.jpg)
+![Image](/media/712/sushi-beta-5.jpg)
+![Image](/media/712/sushi-beta-6.jpg)
 
 [Sushi Beta]: http://http://www.sushibeta.com.br/
 [Sushiguen]: /sushiguen

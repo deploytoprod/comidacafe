@@ -23,5 +23,5 @@ A loja conta também com produtos de varejo disponíveis para compra, como máqu
 
 A água com gás que acompanha veio morna e sem gás e não veio o biscoito, como costuma vir de acompanhamento. Parece que o lugar perdeu sua identidade.
 
-![Image](/media/il-barista-1.jpg)
-![Image](/media/il-barista-2.jpg)
+![Image](/media/712/il-barista-1.jpg)
+![Image](/media/712/il-barista-2.jpg)

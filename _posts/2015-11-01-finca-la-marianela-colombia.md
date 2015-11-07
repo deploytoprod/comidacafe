@@ -20,8 +20,8 @@ Na minha opinião os colombianos são os melhores café do mundo, e o Finca La M
 
 Depois faço um post sobre o [LAB Tostadores de Cafe], o lugar é maravilhoso e é visita obrigatória sempre que eu for a Buenos Aires. De acordo com a [Facebook FanPage] fica na rua [Humboldt, 1542] - Palermo.
 
-![Image](/media/finca-la-marianela-1.jpg)
-![Image](/media/finca-la-marianela-2.jpg)
+![Image](/media/712/finca-la-marianela-1.jpg)
+![Image](/media/712/finca-la-marianela-2.jpg)
 
 [LAB Tostadores de Cafe]: http://www.labcafe.com.ar/
 [Facebook FanPage]: https://www.facebook.com/labtostadores/

@@ -16,7 +16,7 @@ Conforme já dito, na minha opinião os cafés colombianos são os melhores do m
 
 > Este café fue cosechado y cultivado por familias cafeteras colombianas, capacitados para que en sus fincas apliquen los principios sociales, económicos y ambientales durante todo em proceso de producción. El sello UTZ certified(TM) asegura que el café fue producido con respeto al medio ambiente y a la gente que lo produjó. 100% café premium colombiano.
 
-![Image](/media/juan-valdez-finca-3.jpg)
+![Image](/media/712/juan-valdez-finca-3.jpg)
 
 O aroma é altamente marcanta e facilmente diferenciável dos outros cafés, em um teste cego que fiz envolvendo 3 tipos de grãos, o [Finca] foi facilmente identificável pelo meu focinho. Um fato que eu gostaria de adicionar aqui é que na página da [amazon.com] dessse café ele está avaliado com 5 estrelas (nota máxima), tudo bem que americano não entende muito de café, mas...
 
@@ -42,8 +42,8 @@ Sem dúvida é uma excelente opção de café para se ter em casa. Eu provei o J
 
 Não vejo a hora de também provar o [Orgânico], o [Huila], o [Antiquoia] e o [Sierra Nevada] e o [Nariño], todos by Juan Valdez. Uma vez que eu tenha provado todos, vocês poderão ler um review de cada um deles aqui no site.
 
-![Image](/media/juan-valdez-finca-1.jpg)
-![Image](/media/juan-valdez-finca-2.jpg)
+![Image](/media/712/juan-valdez-finca-1.jpg)
+![Image](/media/712/juan-valdez-finca-2.jpg)
 
 PS: Em aproximadamente 1 mês estarei na Colômbia a trabalho e já estou vendo que terei uma overdose de café.
 

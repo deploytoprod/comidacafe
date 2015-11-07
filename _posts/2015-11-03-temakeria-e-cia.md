@@ -21,10 +21,10 @@ Eu nunca teria conhecido se não fosse o Santiago para me apresentar (mesmo assi
 
 De todas as vezes que fui comer no [Temakeria e Cia], a consistência se apresentou a mesma: exatamente o mesmo sabor, a mesma alga utilizada e com o mesmo tipo de preparo e atendimento, e já fui em 3 unidades diferentes.
 
-![Image](/media/temakeria-e-cia-1.jpg)
-![Image](/media/temakeria-e-cia-2.jpg)
-![Image](/media/temakeria-e-cia-3.jpg)
-![Image](/media/temakeria-e-cia-4.jpg)
+![Image](/media/712/temakeria-e-cia-1.jpg)
+![Image](/media/712/temakeria-e-cia-2.jpg)
+![Image](/media/712/temakeria-e-cia-3.jpg)
+![Image](/media/712/temakeria-e-cia-4.jpg)
 
 
 [Temakeria e Cia]: http://www.temakeria-ecia.com/
