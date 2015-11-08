@@ -22,7 +22,7 @@ Comprei quando fui ao [Lab Tostadores de Cafe], que fica em Palermo, Buenos Aire
 
 Eu ia falar que dei sorte de pegar uma torra recente (dá pra ver pelo "bolo"), mas acho que vindo do [Lab Tostadores de Cafe] não se trata de sorte.
 
-Gostei muito do corpo com as notas de frutos vermelhos. Um delicioso café, porém um pouco ácido embora doce (vai entender, rs). Olha essa cor:
+Gostei muito do corpo com as notas de frutos vermelhos. Um delicioso café, porém um pouco ácido embora doce (vai entender, rs). Olha essa cor e corpo:
 
 ![Image](/media/712/papua-1.jpg)
 ![Image](/media/712/papua-2.jpg)
