@@ -2,13 +2,13 @@
 layout: postradar
 author: Rafael Lopes
 title: Boku - culinária asiática
-local: 98
+local: 82
 atendimento: 88
-limpeza: 89
-apresentacao: 91
-tempero: 90
-cardapio: 87
-preco: 88
+limpeza: 85
+apresentacao: 90
+tempero: 80
+cardapio: 77
+preco: 79
 sobremesa:
 cover: boku.jpg
 ---
@@ -45,6 +45,7 @@ Toda a refeição saiu por uma bagatela de 80 reais. Me diz onde você come por 
 
 O atendimento é muito bom, os garçons são atenciosos e sabem explicar os pratos com detalhes. Eu tenho impressão de que as coisas mais caras aqui são as bebidas, que fazem por pagar a comida (tipo Las Vegas que tem hotel barato porque tem casino), e como eu não bebo, tô em vantagem!
 
+PS: Lembrar de pegar a câmera profissional quando for fotografar de noite.
 
 [Garden Santa Fe]: https://www.google.com.mx/maps/place/Garden+Santa+Fe/@19.3654703,-99.2641707,3a,75y,90t/data=!3m8!1e2!3m6!1s-y25MPWS70rI%2FVNtuwLi8fZI%2FAAAAAAAAA7c%2FEH-pRviga9Q!2e4!3e12!6s%2F%2Flh5.googleusercontent.com%2F-y25MPWS70rI%2FVNtuwLi8fZI%2FAAAAAAAAA7c%2FEH-pRviga9Q%2Fs129-k-no%2F!7i2048!8i1365!4m6!1m3!3m2!1s0x85d200c341b36d05:0x111ff5e7ac27fa78!2sJW+Marriott+Hotel+Mexico+City+Santa+Fe!3m1!1s0x0000000000000000:0xb545167e0523deba!6m1!1e1
 [Boku]: http://www.boku.com.mx/
