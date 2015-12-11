@@ -4,7 +4,7 @@ author: Rafael Lopes
 title: Fazenda São Leopoldo
 aroma: 85
 corpo: 79
-docura: 98
+docura: 88
 finalizacao: 89
 acidez: 92
 forca: 80
