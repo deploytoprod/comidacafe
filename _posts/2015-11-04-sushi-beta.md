@@ -3,7 +3,7 @@ layout: postradar
 author: Rafael Lopes
 title: Sushi Beta
 local:
-atendimento: 32
+atendimento: 80
 limpeza: 89
 apresentacao: 91
 tempero: 89
@@ -31,7 +31,7 @@ O Shoyu também é o melhor shoyu possível que pode ser entregue via delivery. 
 ![Image](/media/712/sushi-beta-5.jpg)
 ![Image](/media/712/sushi-beta-6.jpg)
 
-Update: Tá ficando cada dia mais difícil pedir Sushi Beta, outro dia eu consegui pedir e o pedido não só não veio no horário combinado, como eu ligava pra lá e ninguém atendia. Vacilo feio...
+Update: Tá ficando um pouco difícil pedir Sushi Beta, outro dia eu consegui pedir e o pedido não só não veio, como eu ligava pra lá e ninguém atendia. Vacilo feio...
 
 [Sushi Beta]: http://http://www.sushibeta.com.br/
 [Sushiguen]: /sushiguen
