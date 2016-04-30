@@ -2,13 +2,13 @@
 layout: postradar
 author: Rafael Lopes
 title: Juan Valdez Finca - Colômbia
-aroma: 95
-corpo: 88
+aroma: 80
+corpo: 76
 docura: 95
-finalizacao: 90
-acidez: 91
-forca: 80
-preco: 88
+finalizacao: 81
+acidez: 80
+forca: 70
+preco: 68
 cover: juan-valdez-finca.jpg
 ---
 
